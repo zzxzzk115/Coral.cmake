@@ -1,2 +1,2 @@
 # SCoral
-SCoral is a customized Coral with xmake configurations.
+SCoral is a customized [Coral](https://github.com/StudioCherno/Coral) with xmake configurations.
