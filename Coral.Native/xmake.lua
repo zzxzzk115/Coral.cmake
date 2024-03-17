@@ -27,3 +27,7 @@ target("CoralNative")
 
     -- set target directory
     set_targetdir("$(buildir)/$(plat)/$(arch)/$(mode)/CoralNative")
+
+    -- set install files
+    add_installfiles("$(projectdir)/Prebuilt/$(plat)/$(arch)/Coral**", {prefixdir = "bin"})
+    add_installfiles("$(projectdir)/Coral.Managed/Coral.Managed.runtimeconfig.json", {prefixdir = "bin"})
