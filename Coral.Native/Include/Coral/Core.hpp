@@ -22,7 +22,12 @@
 #else
 	#define CORAL_CALLTYPE
 	#define CORAL_STR(s) s
+
+	#if defined (CORAL_LINUX)
 	#define CORAL_HOSTFXR_NAME "libhostfxr.so"
+	#elif defined (CORAL_MACOSX)
+	#define CORAL_HOSTFXR_NAME "libhostfxr.dylib"
+	#endif
 
 	using CharType = char;
 	using StringView = std::string_view;

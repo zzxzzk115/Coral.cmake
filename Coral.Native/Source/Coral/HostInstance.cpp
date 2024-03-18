@@ -42,6 +42,8 @@ namespace Coral {
 		case MessageLevel::Error:
 			level = "Error";
 			break;
+		default:
+			break;
 		}
 
 		std::cout << "[Coral](" << level << "): " << InMessage << std::endl;
@@ -145,6 +147,11 @@ namespace Coral {
 		{
 			std::filesystem::path("/usr/lib/dotnet/host/fxr/"),
 			std::filesystem::path("/usr/share/dotnet/host/fxr/"),
+		};
+#elif defined(CORAL_MACOSX)
+		auto searchPaths = std::array
+		{
+			std::filesystem::path("/usr/local/share/dotnet/host/fxr/")
 		};
 #endif
 
