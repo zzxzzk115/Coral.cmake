@@ -1,10 +1,26 @@
 # Folders
 .vs/
 **/Build/
-**/Intermediates/
-**/bin/
-**/obj/
-**/.vscode/
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+CMakeUserPresets.json
+
+bin/
+
+# VS Code
+.vscode/
+
+# VS
+out/
 
 .idea/
 
@@ -15,9 +31,7 @@
 *.vcxproj.filters
 *.vcxproj.user
 
-Makefile
-
 *.code-workspace
 
-.xmake/
+cmake*/
 build/
